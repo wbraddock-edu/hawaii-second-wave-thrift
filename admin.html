@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Second Wave Thrift</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap"><svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <rect width="36" height="36" rx="4" fill="#7D6608" opacity="0.15"/>
+  <text x="18" y="25" text-anchor="middle" font-family="Fraunces,serif" font-weight="700" font-size="18" fill="#7D6608">2W</text>
+</svg><span>Second Wave Thrift</span></a>
+    <nav><ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="services.html">Shop</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="booking.html">Donate</a></li><li><a href="faq.html">FAQ</a></li><li><a href="reviews.html">Reviews</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <button id="theme-toggle" class="btn-theme">🌙</button>
+      <a href="booking.html" class="btn-book">Donate Items</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main>
+  <div id="login-section"><div class="admin-login"><div class="admin-card">
+    <h1>Admin Login</h1><p>Second Wave Thrift internal dashboard.</p>
+    <form id="admin-login-form">
+      <div class="form-group"><label for="admin-pw">Password</label><input type="password" id="admin-pw" placeholder="Password" autocomplete="current-password"></div>
+      <p id="login-error" style="color:#DC2626;font-size:0.85rem;margin-bottom:0.75rem;"></p>
+      <button type="submit" class="btn-primary" style="width:100%;">Log In</button>
+    </form>
+    <p style="font-size:0.8rem;color:var(--text-muted);margin-top:1rem;text-align:center;">Demo: admin123</p>
+  </div></div></div>
+  <div id="admin-dash" class="admin-dash">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;flex-wrap:wrap;gap:1rem;">
+      <div><h1 style="font-family:var(--font-heading);font-size:1.8rem;color:var(--text);">Dashboard</h1><p style="color:var(--text-muted);">Second Wave Thrift — Hanapepe, Kauai</p></div>
+      <a href="index.html" style="font-size:0.9rem;color:var(--primary);font-weight:700;">← View Site</a>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">84</div><div class="stat-label">Items Sold (Week)</div></div>
+      <div class="stat-card"><div class="stat-num">12</div><div class="stat-label">Donations Received</div></div>
+      <div class="stat-card"><div class="stat-num">$1,840</div><div class="stat-label">Revenue (Week)</div></div>
+      <div class="stat-card"><div class="stat-num">4.9★</div><div class="stat-label">Avg Review</div></div>
+    </div>
+    <div class="admin-table-wrap"><h2>Recent Donation Requests</h2><table>
+      <thead><tr><th>Donor</th><th>Type</th><th>Date</th><th>Method</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Margaret H.</td><td>Estate Cleanout</td><td>Jul 3, 2025</td><td>Pickup</td><td><span class="badge badge-yellow">Scheduled</span></td></tr>
+        <tr><td>Keoni N.</td><td>Clothing</td><td>Jul 1, 2025</td><td>Drop-off</td><td><span class="badge badge-green">Received</span></td></tr>
+        <tr><td>Waimea Family</td><td>Furniture</td><td>Jun 30, 2025</td><td>Pickup</td><td><span class="badge badge-green">Completed</span></td></tr>
+        <tr><td>Art Night Volunteer</td><td>Books & Records</td><td>Jun 27, 2025</td><td>Drop-off</td><td><span class="badge badge-green">Processed</span></td></tr>
+      </tbody>
+    </table></div>
+    <div class="admin-table-wrap"><h2>Recent Messages</h2><table>
+      <thead><tr><th>From</th><th>Subject</th><th>Date</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>visitor@gmail.com</td><td>Looking for vintage Kahala shirts</td><td>Jun 29, 2025</td><td><span class="badge badge-red">Unread</span></td></tr>
+        <tr><td>kauai.resorts@email.com</td><td>Hotel linen donation inquiry</td><td>Jun 28, 2025</td><td><span class="badge badge-yellow">Pending</span></td></tr>
+        <tr><td>artnight@hanapepe.com</td><td>Friday Art Night coordination</td><td>Jun 27, 2025</td><td><span class="badge badge-green">Replied</span></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</main>
+<script src="js/main.js"></script>
+
+  <!-- Powered by Design Holistically -->
+  <footer style="background:#111;color:#aaa;text-align:center;padding:1.5rem;font-size:0.85rem;font-family:sans-serif;">
+    <p>&copy; 2024. Powered by <a href="https://designholistically.com" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Design Holistically</a>. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
